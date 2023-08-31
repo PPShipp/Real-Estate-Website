@@ -32,11 +32,19 @@ form input {
 }
 form span {
   font-size: 14px;
-  color: grey;
-}
+  font-weight: 500;
+  color: black;
+  margin-left: 10px;
+} 
 input::placeholder {
   font-size: 17px;
-  color: black;
+  color: grey;
+}
+.btn1:hover {
+  background-color: #219652;
+  transition: 1s ease-in-out;
+  position: relative;
+  bottom: 2px;
 }
 form .box {
   padding: 15px;
@@ -49,17 +57,38 @@ form h4 {
   font-weight: 500;
 }
 @media screen and (max-width: 800px) {
-  .hero .container {
+  /* .hero .container {
     padding-top: 30%;
-  }
+  } */
   form {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
   form .box {
     border-left: none;
   }
   form input {
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 650px) {
+  .heading{
+    display: none;
+  }
+  .form {
+    margin-top: 20px;
+  }
+  .title-mobile{
+    display: none;
+  }
+  .btn1 {
+    margin: auto;
+    width: 90%;
+  }
+  .mobile-flex{
+    padding: 20px;
     width: 100%;
   }
 }

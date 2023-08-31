@@ -22,11 +22,11 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <div className='button flex'>
+          <div className='button flex header__mobile'>
             <h4>
               <span>2</span> My List
             </h4>
-            <button className='btn1'>
+            <button className='btn1 btn-tablet-header'>
               <i className='fa fa-sign-out'></i> Sign In
             </button>
           </div>

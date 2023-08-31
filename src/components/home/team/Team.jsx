@@ -29,7 +29,7 @@ const Team = () => {
                     ))}
                   </ul>
                   <div className='button flex'>
-                    <button>
+                    <button className="message-btn">
                       <i className='fa fa-envelope'></i>
                       Message
                     </button>

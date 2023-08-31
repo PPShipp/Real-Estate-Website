@@ -5,9 +5,13 @@
   padding: 2rem;
   transition: 0.5s;
 }
+
 .team .box:hover {
   box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
   cursor: pointer;
+  position: relative;
+  bottom: 2px;
+  transition: .2s ease-in;
 }
 .team .details {
   text-align: center;
@@ -66,7 +70,18 @@
 .team .button {
   margin-top: 20px;
 }
+.message-btn:hover {
+  background-color: #249854;
+  transition: .5s ease-in-out;
+}
 .team .button i {
   color: white;
   font-size: 20px;
+}
+@media screen and (max-width: 650px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
 }

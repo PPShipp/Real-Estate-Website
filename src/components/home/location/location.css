@@ -15,33 +15,51 @@
   flex-direction: column;
   height: 250px;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
   z-index: 222;
+  background: rgba(0, 0, 0, 0.2);
 }
-.location .overlay::after {
+/* .location .overlay::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 50px;
   width: 340px;
   height: 210px;
   background: rgb(15 28 47 / 30%);
   z-index: -1;
   margin: 20px;
   border-radius: 5px;
-}
+} */
 .location h5 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .location label {
   color: #fff;
   margin-right: 20px;
   opacity: 0.8;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1150px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
   .location .overlay::after {
-    width: 280px;
-    height: 170px;
+    margin: auto;
+    left: 2%;
+    width: 85%;
+    height: 80%;
+  }
+  .grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
   }
 }

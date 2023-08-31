@@ -1,7 +1,7 @@
 import React from "react"
 import Heading from "../../common/Heading"
 import { location } from "../../data/Data"
-import "./style.css"
+import "./location.css"
 
 const Location = () => {
   return (
@@ -10,7 +10,7 @@ const Location = () => {
         <div className='container'>
           <Heading title='Explore By Location' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' />
 
-          <div className='content grid3 mtop'>
+          <div className='content grid3 mtop grid-mobile'>
             {location.map((item, index) => (
               <div className='box' key={index}>
                 <img src={item.cover} alt='' />

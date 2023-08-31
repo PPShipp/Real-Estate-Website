@@ -25,7 +25,7 @@ const Footer = () => {
               <h2>Do You Need Help With Anything?</h2>
               <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
 
-              <div className='input flex'>
+              <div className='input flex '>
                 <input type='text' placeholder='Email Address' />
                 <button>Subscribe</button>
               </div>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2021 RentUP. Designd By GorkCoder.</span>
+        <span>© 2021 RentUP. Designd By PPSHIP.</span>
       </div>
     </>
   )

@@ -41,6 +41,10 @@
 .price .btn5 {
   width: 100%;
 }
+.price .btn5:hover {
+  background-color: rgb(39, 174, 96);
+  color: rgb(255, 255, 255);
+}
 @media screen and (max-width: 800px) {
   .price .content {
     flex-direction: column;

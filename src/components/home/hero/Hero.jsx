@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container'>
-          <Heading title='Search Your Next Home ' subtitle='Find new & featured property located in your local city.' />
+        <div className='container '>
+          <Heading className='heading'title='Search Your Next Home ' subtitle='Find new & featured property located in your local city.' />
 
-          <form className='flex'>
+          <form className='flex mobile-flex'>
             <div className='box'>
               <span>City/Street</span>
               <input type='text' placeholder='Location' />
@@ -22,7 +22,7 @@ const Hero = () => {
               <span>Price Range</span>
               <input type='text' placeholder='Price Range' />
             </div>
-            <div className='box'>
+            <div className='box title-mobile'>
               <h4>Advance Filter</h4>
             </div>
             <button className='btn1'>

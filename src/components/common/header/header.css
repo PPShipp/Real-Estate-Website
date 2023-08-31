@@ -30,13 +30,35 @@ header span {
 header h4 {
   font-weight: 500;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 header .toggle {
   display: none;
 }
+
+@media screen and (max-width: 1200px) {
+  
+  .header__mobile {
+    font-size: 1rem;
+    margin-left: 50px;
+  }
+  .header__mobile h4{
+    display: none;
+  }
+  .btn-tablet-header{
+    width: 100%;
+    padding: 10px 20px;
+  }
+  header {
+    margin-top: 5px;
+    height: 8vh;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     padding: 0;
+    height: 12vh;
+    
   }
   header img {
     margin-top: 30px;

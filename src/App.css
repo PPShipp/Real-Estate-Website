@@ -99,6 +99,12 @@ img {
   border-radius: 50px;
   font-size: 20px;
 }
+.btn2:hover {
+  background-color: #229150;
+  transition: .5s ease-in;
+  position: relative;
+  bottom: 2px;
+}
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -112,6 +118,11 @@ img {
   background-color: #000;
   color: #fff;
 }
+.btn4:hover{
+  background-color: #444343;
+  transition: .5s ease-in-out;
+
+}
 .btn5 {
   border-radius: 50px;
   padding: 20px 40px;
@@ -121,6 +132,7 @@ img {
   border: 5px solid #27ae601f;
   background: #fff;
 }
+
 .back {
   height: 40vh;
   position: relative;
@@ -170,5 +182,12 @@ img {
   .back img,
   .back {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .back::after,
+  .back img,
+  .back {
+    height: 45vh;
   }
 }

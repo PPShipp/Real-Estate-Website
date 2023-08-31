@@ -2,9 +2,11 @@ import React from "react"
 import { list } from "../../data/Data"
 
 const RecentCard = () => {
+  
+  
   return (
     <>
-      <div className='content grid3 mtop'>
+      <div className='content grid3 mtop grid1-mobile'>
         {list.map((val, index) => {
           const { cover, category, location, name, price, type } = val
           return (
@@ -15,7 +17,7 @@ const RecentCard = () => {
               <div className='text'>
                 <div className='category flex'>
                   <span style={{ background: category === "For Sale" ? "#25b5791a" : "#ff98001a", color: category === "For Sale" ? "#25b579" : "#ff9800" }}>{category}</span>
-                  <i className='fa fa-heart'></i>
+                  <i className='fa fa-heart heart' ></i>
                 </div>
                 <h4>{name}</h4>
                 <p>
